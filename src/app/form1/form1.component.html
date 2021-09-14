@@ -1,0 +1,120 @@
+<div>
+    <div>
+        <h2>Settings</h2>
+    </div>
+    <div>
+        <h3>Location Selection</h3>
+    </div>
+    <div style="text-align: center;">
+        <div>
+            <div ng-app="demo" ng-controller="myCtrl">
+     
+                <select ng-model="selectedName" ng-options="x for x in names" style="width: 200px; height: 40px;">
+                    <option selected disabled>all</option>
+                    <option>Building 1</option>
+                    <option>Building 2</option>
+                    <option>Building 3</option>
+                    <option>Building 4</option>
+                </select>
+                 
+                </div>
+        </div>
+        <br/>
+        <div>
+            <div ng-app="demo" ng-controller="myCtrl">
+     
+                <select ng-model="selectedName" ng-options="x for x in names" style="width: 200px; height: 40px;">
+                    <option selected disabled>all</option>
+                    <option>Building 1</option>
+                    <option>Building 2</option>
+                    <option>Building 3</option>
+                    <option>Building 4</option>
+                    
+                </select>
+                 
+                </div>
+        </div>
+        <br/>
+        <div>
+            <div ng-app="demo" ng-controller="myCtrl">
+     
+                <select ng-model="selectedName" ng-options="x for x in names" style="width: 200px; height: 40px;">
+                    <option selected disabled>all</option>
+                    <option>Building 1</option>
+                    <option>Building 2</option>
+                    <option>Building 3</option>
+                    <option>Building 4</option>
+                </select>
+                 
+                </div>
+        </div>
+        <br/>
+        <div>
+            <div ng-app="demo" ng-controller="myCtrl">
+     
+                <select ng-model="selectedName" ng-options="x for x in names" style="width: 200px; height: 40px;">
+                    <option selected disabled>all</option>
+                    <option>Building 1</option>
+                    <option>Building 2</option>
+                    <option>Building 3</option>
+                    <option>Building 4</option>
+                </select>
+                 
+                </div>
+        </div>
+    </div>
+    <div>
+        <h3>Time/Duration Selection</h3>
+    </div>
+    <div style="text-align: center;">
+        <div>
+            <button mat-flat-button color="primary" class="button1">Last Week</button>&nbsp;&nbsp;
+            <button mat-flat-button color="primary" class="button1">Last Month</button>
+        </div>
+        <br/>
+        <div>
+            <button mat-flat-button color="primary" class="button1">3 Months</button>&nbsp;&nbsp;
+            <button mat-flat-button color="primary" class="button1">Last Year</button>
+        </div>
+        <br/>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </div>
+    </div>
+    <div>
+        <mat-checkbox>include weekends</mat-checkbox>
+    </div>
+    <div>
+        <h3>Analytics Selection</h3>
+    </div>
+    <div>
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Occupancy Analytics</mat-radio-button><br/><br/>
+            <mat-radio-button value="2">Vocancy Analytics</mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <br/>
+    <div>
+        <button mat-flat-button color="primary" class="button2">MORE SETTINGS</button>
+    </div>
+    <div>
+        <div>
+            <h3>Other options</h3>
+        </div>
+        <div>
+            <h4>Download Report</h4>
+        </div>
+        <div>
+            <h4>Download Raw Data</h4>
+        </div>
+        <div>
+            <h4>Layout View</h4>
+        </div>
+    </div>
+    
+</div>
