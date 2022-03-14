@@ -90,7 +90,8 @@ export class New2Component implements OnInit {
       series1.tooltipText = "Place taken by {name} in {categoryX}: {valueY}";
       series1.legendSettings.valueText = "{valueY}";
       series1.visible  = false;
-      series1.fill=am4core.color("#45becf")
+      series1.fill=am4core.color("#45becf");
+      series1.stroke = am4core.color("#45becf");
       
       let series2 = chart.series.push(new am4charts.LineSeries());
       series2.dataFields.valueY = "phour";
@@ -100,6 +101,7 @@ export class New2Component implements OnInit {
       series2.tooltipText = "Place taken by {name} in {categoryX}: {valueY}";
       series2.legendSettings.valueText = "{valueY}";
       series2.fill=am4core.color("#5975f3");
+      series2.stroke=am4core.color("#5975f3");
       
       // let series3 = chart.series.push(new am4charts.LineSeries());
       // series3.dataFields.valueY = "uk";

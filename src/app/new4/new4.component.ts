@@ -56,6 +56,10 @@ series.dataFields.categoryY = "weekday";
 series.dataFields.value = "value";
 series.sequencedInterpolation = true;
 series.defaultState.transitionDuration = 3000;
+series.columns.template.adapter.add('stroke', (fill, target) => {
+  return am4core.color("#45becf");
+});
+series.sequencedInterpolation = true;
 
 let bgColor = new am4core.InterfaceColorSet().getFor("background");
 
